@@ -18,7 +18,7 @@ export const Header = () => {
 
           <Link to="/" className="header-brand">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYA7Kqto7ffhGJtJ-zFFbGkDfbdmUa7TmvQ&s"
+              src="/logoclub.webp"
               alt="Escudo Belgrano"
               className="header-logo"
             />
@@ -38,7 +38,7 @@ export const Header = () => {
               </li>
 
               <li className="nav-item">
-                <Link to="/AboutUs" className="nav-link" onClick={() => setMenuActive(false)}>Historia</Link>
+                <Link to="/historia" className="nav-link" onClick={() => setMenuActive(false)}>Historia</Link>
               </li>
 
               <li className="nav-item">

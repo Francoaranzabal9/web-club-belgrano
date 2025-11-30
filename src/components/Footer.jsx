@@ -8,7 +8,7 @@ export const Footer = () => {
 
         <div className="footer-brand">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYA7Kqto7ffhGJtJ-zFFbGkDfbdmUa7TmvQ&s"
+            src="/logoclub2.webp"
             alt="Escudo Club Belgrano"
             className="footer-logo"
           />
@@ -24,7 +24,7 @@ export const Footer = () => {
           <h3>Navegación</h3>
           <ul>
             <li><Link to="/" className="footer-link">Inicio</Link></li>
-            <li><Link to="/sobre-nosotros" className="footer-link">Historia</Link></li>
+            <li><Link to="/historia" className="footer-link">Historia</Link></li>
             <li><Link to="/authorities" className="footer-link">Comisión Directiva</Link></li>
             <li><Link to="/contact" className="footer-link">Contacto</Link></li>
           </ul>
@@ -66,7 +66,7 @@ export const Footer = () => {
 
       {/* Barra inferior de Copyright */}
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Club Atlético Belgrano. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Club Atlético y Social General Belgrano. Todos los derechos reservados.</p>
       </div>
     </footer>
   )
