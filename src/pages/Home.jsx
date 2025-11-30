@@ -8,13 +8,13 @@ const Home = () => {
     <Layout className="home-container">
 
       {/* Hero Section */}
-      <header className="hero">
+      <section className="hero-belgrano-style">
+        <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="hero-title">CLUB ATLÉTICO [NOMBRE]</h1>
-          <p className="hero-slogan">"Mi club, tu club"</p>
-          <button className="cta-button">Hazte Socio</button>
+          <span className="hero-club-name">CLUB ATLÉTICO y SOCIAL GENERAL BELGRANO</span>
+          <h1 className="hero-slogan-big">MI CLUB,<br />TU CLUB.</h1>
         </div>
-      </header>
+      </section>
 
       {/* Sección de Historia */}
       <section className="history-section">
@@ -29,20 +29,36 @@ const Home = () => {
 
       {/* Grid Links a otras secciones */}
       <section className="navigation-grid">
-        <Link to="/sobre-nosotros" className="grid-card">
+        <Link to="/about" className="grid-card">
+
           <h3 className="card-title">Institucional</h3>
           <p>Conoce a nuestra comisión y valores.</p>
         </Link>
 
-        <Link to="/store" className="grid-card">
-          <h3 className="card-title">Tienda Oficial</h3>
-          <p>Lleva los colores del club contigo.</p>
-        </Link>
-
         <Link to="/activities" className="grid-card">
+
           <h3 className="card-title">Actividades</h3>
           <p>Fútbol, Basket, Tenis y más.</p>
         </Link>
+      </section>
+
+      {/* Store Banner */}
+      <section className="store-banner-section">
+        <div className="store-banner-text">
+          <h2>Lleva los colores</h2>
+          <p>Descubre la nueva indumentaria oficial y accesorios.</p>
+        </div>
+        <Link to="/store" className="btn-store-outline">
+          Visitar Tienda Oficial
+        </Link>
+      </section>
+
+      {/* Social Media Grid */}
+      <section className="social-section">
+        <div className="section-header">
+          <h2 className="section-title">El Club en Redes</h2>
+          <p>Sigue el día a día de nuestra comunidad.</p>
+        </div>
       </section>
 
     </Layout>
