@@ -42,7 +42,7 @@ export const Header = () => {
               </li>
 
               <li className="nav-item">
-                <Link to="/Store" className="nav-link" onClick={() => setMenuActive(false)}>Tienda</Link>
+                <Link to="/store" className="nav-link" onClick={() => setMenuActive(false)}>Tienda</Link>
               </li>
 
               {!user && (
@@ -51,7 +51,7 @@ export const Header = () => {
                     <Link to="/login" className="nav-link" onClick={() => setMenuActive(false)}>Iniciar Sesión</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/register" className="nav-link highlight-register" onClick={() => setMenuActive(false)}>
+                    <Link to="/registro" className="nav-link highlight-register" onClick={() => setMenuActive(false)}>
                       Registrarse
                     </Link>
                   </li>
@@ -62,7 +62,7 @@ export const Header = () => {
           </nav>
 
           <div className="header-actions">
-            <Link to="/Store" className="shop-button">
+            <Link to="/store" className="shop-button">
               <span className="cart-icon"><FaShoppingCart /></span>
             </Link>
           </div>
